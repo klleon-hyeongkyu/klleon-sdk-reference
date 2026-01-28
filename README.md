@@ -1,41 +1,23 @@
-# Website
+# Klleon Chat SDK API Reference
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Klleon Chat SDK (js-sdk v1.3.0) 공식 API 레퍼런스 문서
 
-## Installation
-
-```bash
-yarn
-```
-
-## Local Development
+## 개발
 
 ```bash
-yarn start
+npm install
+npm run start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
+## 빌드
 
 ```bash
-yarn build
+npm run build
+npm run serve
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## 문서 구조
 
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- **API Reference**: init, lifecycle, messaging, stt, events 등
+- **Components**: avatar-container, chat-container 웹 컴포넌트
+- **Guides**: TypeScript 타입 정의, 에러 처리
