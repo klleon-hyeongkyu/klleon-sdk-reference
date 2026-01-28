@@ -1,0 +1,42 @@
+# Klleon Chat SDK
+
+> AI 아바타와 실시간 대화를 구현하는 JavaScript SDK (v1.3.0)
+
+## Docs
+
+- [소개](/docs/intro): Klleon Chat SDK 개요와 주요 기능을 알아봅니다.
+- [빠른 시작](/docs/getting-started): 5분 만에 아바타 채팅을 구현하는 방법을 안내합니다.
+
+### API Reference
+
+- [init()](/docs/api/init): SDK를 초기화하고 서버와 연결합니다. 모든 기능 사용 전 필수로 호출해야 합니다.
+- [destroy()](/docs/api/lifecycle#destroy): SDK 리소스를 정리하고 연결을 종료합니다.
+- [reconnect()](/docs/api/lifecycle#reconnect): 연결이 끊어졌을 때 재연결을 시도합니다.
+- [sendTextMessage()](/docs/api/messaging#sendtextmessage): 사용자 텍스트 메시지를 아바타에게 전송합니다.
+- [echo()](/docs/api/messaging#echo): 아바타가 지정된 텍스트를 그대로 발화합니다.
+- [clearMessageList()](/docs/api/messaging#clearmessagelist): 채팅 메시지 목록을 초기화합니다.
+- [startStt()](/docs/api/stt#startstt): 음성 인식을 시작합니다. 마이크 권한이 필요합니다.
+- [endStt()](/docs/api/stt#endstt): 음성 인식을 종료하고 결과를 전송합니다.
+- [cancelStt()](/docs/api/stt#cancelstt): 진행 중인 음성 인식을 취소합니다.
+- [startAudioEcho()](/docs/api/audio-echo#startaudioecho): Base64 오디오 데이터를 아바타가 발화합니다.
+- [endAudioEcho()](/docs/api/audio-echo#endaudioecho): 오디오 에코 세션을 종료합니다.
+- [changeAvatar()](/docs/api/avatar-control#changeavatar): 다른 아바타로 변경합니다.
+- [stopSpeech()](/docs/api/avatar-control#stopspeech): 아바타의 현재 발화를 중단합니다.
+- [wakeUpAvatar()](/docs/api/avatar-control#wakeupavatar): 대기 상태의 아바타를 활성화합니다.
+- [onChatEvent()](/docs/api/events#onchatevent): 채팅 메시지 이벤트를 구독합니다.
+- [onStatusEvent()](/docs/api/events#onstatusevent): SDK 상태 변경 이벤트를 구독합니다.
+- [onErrorEvent()](/docs/api/events#onerrorevent): 에러 이벤트를 구독합니다.
+
+### UI 컴포넌트
+
+- [avatar-container](/docs/components/avatar-container): 아바타 비디오를 표시하는 웹 컴포넌트입니다.
+- [chat-container](/docs/components/chat-container): 채팅 UI를 표시하는 웹 컴포넌트입니다.
+
+### 가이드
+
+- [TypeScript 지원](/docs/guides/typescript): TypeScript 프로젝트에서 타입 정의를 사용하는 방법입니다.
+- [에러 처리](/docs/guides/error-handling): 에러 코드와 대응 방법을 안내합니다.
+
+### 참고
+
+- [변경 로그](/docs/changelog): 버전별 변경 사항을 확인합니다.

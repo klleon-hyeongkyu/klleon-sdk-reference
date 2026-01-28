@@ -1,0 +1,15 @@
+{
+  "folders": ["docs"],
+  "excludeFolders": ["node_modules", "build", ".docusaurus"],
+  "excludeFiles": [],
+  "rules": [
+    "SDK를 사용하기 전에 반드시 init()을 호출해야 합니다",
+    "VIDEO_CAN_PLAY 상태가 되어야 sendTextMessage(), startStt() 등의 메서드를 호출할 수 있습니다",
+    "이벤트 핸들러(onStatusEvent, onChatEvent, onErrorEvent)는 init() 호출 전에 등록하세요",
+    "연결 에러 발생 시 reconnect()로 재연결을 시도하세요",
+    "IDLE, CONNECTING_FAILED, DESTROYED 상태에서는 reconnect()가 동작하지 않으므로 init()을 다시 호출해야 합니다",
+    "페이지 종료 시 destroy()를 호출하여 리소스를 정리하세요",
+    "마이크 사용을 위해서는 HTTPS 환경이 필요합니다",
+    "avatar-container 웹 컴포넌트는 SDK 로드 시 자동 등록됩니다"
+  ]
+}
